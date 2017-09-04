@@ -1,0 +1,79 @@
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>
+        todo app
+    </title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+<div id="body_div">
+<div style="background-color: yellow; height:70px;vertical-align: middle ">
+    <p id="title" align="center">
+            My todo List
+    </p>
+</div>
+    <input style = "width: 600px"  type="textbox" id="new_todo_input" placeholder="enter todo title here"/>
+    <input type="button" value="Add-todo" onclick="addTodoAJAX()">
+
+    <div id="a_list">
+        <h2>Active Todos
+            <button id="active" onclick="hideshow_a()">Hide</button>
+        </h2>
+
+    </div>
+<div id="todos_list_div"></div>
+
+    <div id="c_list">
+        <h2>Complete Todos
+            <button id="complete" onclick="hideshow_c()">Hide</button>
+        </h2>
+
+    </div>
+
+<div id="completed_todos"></div>
+
+    <div id="d_list">
+        <h2>Delete Todos
+            <button id="delete" onclick="hideshow_d()">Hide</button>
+        </h2>
+
+    </div>
+<div id="deleted_todos"></div>
+
+
+<script>
+    function hideshow_a() {
+        var x = document.getElementById('todos_list_div');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+
+    }
+    function hideshow_c() {
+        var y = document.getElementById('completed_todos');
+        if (y.style.display === 'none') {
+            y.style.display = 'block';
+        } else {
+            y.style.display = 'none';
+        }
+
+    }
+    function hideshow_d() {
+
+        var z = document.getElementById('deleted_todos');
+        if (z.style.display === 'none') {
+            z.style.display = 'block';
+        } else {
+            z.style.display = 'none';
+        }
+
+    }
+</script>
+<script src="script.js" type="text/javascript"></script>
+
+</div>
+</body>
+</html>

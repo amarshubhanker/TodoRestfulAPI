@@ -1,0 +1,59 @@
+.breathVertical
+{
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-decoration: line-through;
+    color: red;
+}
+.breathHorizontal
+{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background-color: red;
+}
+
+h3 {
+    display: inline-block;
+    margin: 0;
+}
+div.todoStatusACTIVE{
+    color:blue;
+}
+
+div.todoStatusCOMPLETE{
+    color:green;
+}
+div.todoStatusDELETED{
+    color:red;
+}
+#a_list,#c_list,#d_list{
+    background-color: darkgrey;
+}
+#body_div
+{
+    margin-left: 200px ;
+    margin-right: 200px;
+    background-color: springgreen;
+
+}
+
+#title{
+    font-family: inherit;
+    color: blue;
+    font-size: 30px;
+    font-style: inherit;
+}
+
+#delete, #active, #complete{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
